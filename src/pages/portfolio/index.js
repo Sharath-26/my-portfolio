@@ -19,19 +19,46 @@ export const Portfolio = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
-                <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        {dataportfolio.map((data, index) => (
+          <div key={index} className="po_item">
+            <img
+              src={data.your_img}
+              alt={data.title}
+              className="w-full h-48 object-cover"
+            />
+            <div className="content p-6">
+              <h2 className="service__title text-2xl font-bold mb-2 text-gray-900">
+                {data.title}
+              </h2>
+              <p className="service_desc text-gray-700 mb-4">
+                {data.description}
+              </p>
+
+              <ul className="text-sm text-gray-600 mb-4 list-disc list-inside space-y-1">
+                {data.points.map((point, idx) => (
+                  <li key={idx}>{point}</li>
+                ))}
+              </ul>
+
+              <p className="text-sm text-gray-500 mb-4">
+                <strong>Tech Stack:</strong> {data.techStack}
+              </p>
+
+              {data.link && (
+                <a
+                  href={data.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors duration-200 rounded mt-auto"
+                >
+                  View Project
+                </a>
+              )}
+            </div>
+          </div>
+        ))}
+
+
       </Container>
     </HelmetProvider>
   );

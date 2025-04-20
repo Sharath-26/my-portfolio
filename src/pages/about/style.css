@@ -1,5 +1,5 @@
 .sec_sp {
-    margin-bottom: calc(3rem + 5.128vw)
+    margin-bottom: calc(0rem + 5.128vw)
 }
 
 .table td,
@@ -69,7 +69,13 @@
 .service-section .service-category-title {
     padding-bottom: 4px;
 }
-
+.service_desc{
+    list-style-type: disc; 
+    padding-left: 1rem;
+}
+.service_desc li {
+    margin-bottom: 10px; 
+}
 
 /*! CSS Used keyframes */
 

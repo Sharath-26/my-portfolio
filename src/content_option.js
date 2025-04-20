@@ -1,166 +1,156 @@
-const logotext = "JOHN";
+const logotext = "Sharath";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+  title: "Sharath Reddy",
+  description:
+    "I’m Sharath Reddy Ravula_Software Engineer,currently working in Austin,Texas.",
 };
 
 const introdata = {
-    title: "I’m John Doe",
-    animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
-    },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+  title: "I’m Sharath Reddy Ravula",
+  animated: {
+    first:
+      "Software Engineer passionate about building scalable, customer-focused solutions.",
+    second:
+      "Building efficient, cloud-powered applications using React, TypeScript, and AWS.",
+    third:
+      "Driving innovation through clean code, ownership, and continuous learning.",
+  },
+  description:
+    "Full-Stack Developer passionate about creating scalable, cloud-native applications with React, TypeScript, and AWS — driven by customer obsession and clean, reliable code.",
+  // your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+  your_img: "/mypic.jpg",
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+  title: "abit about my self",
+  aboutme:
+    "Full-Stack Developer with a passion for building scalable, cloud-native applications. I focus on customer-centric solutions, clean code, and continuous growth.",
 };
-const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
-    },
+const educationData= [
+  {
+    degree: "M.Sc. Information Technology ",
+    institution: " Valparaiso University",
+    year: "2023",
+    logo:"https://e7.pngegg.com/pngimages/967/1024/png-clipart-valpo-university-logo-valparaiso-university-college-valpo-university-logo-thumbnail.png"
+  },
+  {
+    degree: "B.Tech. Computer Science ",
+    institution: " SR University",
+    year: "2021",
+    logo:"https://upload.wikimedia.org/wikipedia/commons/1/12/SRUniversity.png"
+  }
+ 
 ];
 
-const skills = [{
-        name: "Python",
-        value: 90,
-    },
-    {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
-        value: 85,
-    },
+const worktimeline = [
+  {
+    jobtitle: "Software Engineer",
+    where: "Deloitte",
+    date: "2023-Present",
+  },
+  {
+    jobtitle: "Associate Software Engineer",
+    where: "Accenture",
+    date: "2020-21",
+  },
 ];
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
+const skills = [
+  {
+    name: "JavaScript",
+    value: 90,
+  },
+  {
+    name: "React",
+    value: 80,
+  },
+  {
+    name: "Java",
+    value: 80,
+  },
+  {
+    name: "AWS",
+    value: 80,
+  },
+  {
+    name: "Python",
+    value: 70,
+  },
 ];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+const Services = [
+  {
+    title: "Enterprise UX & Performance Optimization",
+    description: [
+      "Developed real-time, multi-agency search systems for the State of Texas using ReactJS, Redux, and AWS, increasing data access efficiency by 45% while supporting 10,000+ monthly users under peak load.",
+      "Created mobile-first, accessible UIs with WCAG-compliance and responsive layouts, improving user task speed by 40% and mobile usability by 50%.",
+      "Built and maintained 25+ modular, reusable components using Redux and Context API, reducing development time by 35% and maintenance overhead by 50%",
+    ],
+  },
+  {
+    title: "Cloud-Native Architecture & DevOps Automation",
+    description: [
+      "Designed and deployed Java Spring Boot microservices and NodeJS APIs, reducing system downtime by 30% and improving scalability for high-volume, mission-critical apps.",
+      "Automated CI/CD workflows with Jenkins, Docker, AWS CodePipeline, cutting deployment time by 60%, achieving 99.9% uptime, and enabling reliable daily releases.",
+      "Provisioned and optimized cloud infrastructure on AWS EC2, Lambda, S3, ensuring load-balanced, fault-tolerant systems capable of handling surge traffic scenarios.",
+    ],
+  },
+  {
+    title: "Security-Focused Omnichannel Frontends",
+    description: [
+      "  Developed SPA-based, omnichannel applications using ReactJS, Next.js, HTML5, improving task execution times by 40% and reducing UI errors by 30%.",
+      "Integrated OAuth2, JWT, and role-based access controls, reducing unauthorized access incidents by 60% while maintaining state-level compliance.Implemented unit and integration testing with Jest, React Testing Library, and JUnit, achieving 95% test coverage and cutting production issues by 30%.",
+    ],
+  },
 ];
+
+const dataportfolio = [
+        {
+            your_img: "Semarc.logo.png",
+          title: "SEMARC Application",
+          description:
+            "A centralized government search platform for Texas integrating data from 4 state agencies. Improved efficiency by 45% with real-time API integration and a scalable React + AWS stack.",
+          points: [
+            "Integrated data from 4 state agencies",
+            "Real-time API integration",
+            "Improved efficiency by 45%",
+            "Built with React, Redux, and AWS"
+          ],
+          techStack: "React, Redux, Spring Boot, MongoDB, AWS",
+          link: "https://www.dfps.texas.gov/About_DFPS/Reports_and_Presentations/Agencywide/documents/2024/2024-09-19_SB1849_Senate_Interim_Hearing_9.19_FINAL.pdf" // optional if you have it
+        },
+      ];
+      
+   
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+  YOUR_EMAIL: "sharathreddyr138@gmail.com",
+  YOUR_FONE: "(940)594-9461",
+  description:
+    "I’m currently exploring new opportunities and am open to connecting with professionals in the industry. If you’d like to collaborate, discuss potential roles, or share insights, feel free to reach out! ",
+  // creat an emailjs.com account
+  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+  YOUR_SERVICE_ID: "service_id",
+  YOUR_TEMPLATE_ID: "template_id",
+  YOUR_USER_ID: "user_id",
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+  github: "https://github.com",
+  facebook: "https://facebook.com",
+  linkedin: "https://linkedin.com",
+  twitter: "https://twitter.com",
 };
 export {
-    meta,
-    dataabout,
-    dataportfolio,
-    worktimeline,
-    skills,
-    services,
-    introdata,
-    contactConfig,
-    socialprofils,
-    logotext,
+  meta,
+  dataabout,
+  dataportfolio,
+  worktimeline,
+  skills,
+  Services,
+  introdata,
+  contactConfig,
+  socialprofils,
+  logotext,
+  educationData,
 };
