@@ -43,10 +43,15 @@ const educationData= [
 ];
 
 const worktimeline = [
+   {
+    jobtitle: "Front End Engineer -II (L5)",
+    where: "Amazon.com",
+    date: "2025-present",
+  },
   {
     jobtitle: "Software Engineer",
     where: "Deloitte",
-    date: "2023-Present",
+    date: "2023-2025",
   },
   {
     jobtitle: "Associate Software Engineer",
@@ -105,6 +110,7 @@ const Services = [
 ];
 
 const dataportfolio = [
+     
         {
             your_img: "Semarc.logo.png",
           title: "SEMARC Application",
