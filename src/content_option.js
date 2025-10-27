@@ -51,7 +51,7 @@ const worktimeline = [
   {
     jobtitle: "Software Engineer",
     where: "Deloitte",
-    date: "2023-2025",
+    date: "2022-2025",
   },
   {
     jobtitle: "Associate Software Engineer",
