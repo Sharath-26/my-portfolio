@@ -44,7 +44,7 @@ const educationData= [
 
 const worktimeline = [
    {
-    jobtitle: "Front End Engineer -II (L5)",
+    jobtitle: "Software Development Engineer -II (L5)",
     where: "Amazon.com",
     date: "2025-present",
   },
