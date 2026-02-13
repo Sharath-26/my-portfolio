@@ -43,10 +43,15 @@ const educationData= [
 ];
 
 const worktimeline = [
+  {
+    jobtitle: "Software Engineer -II",
+    where: "American Express",
+    date: "2026-present",
+  },
    {
     jobtitle: "Software Development Engineer -II (L5)",
     where: "Amazon.com",
-    date: "2025-present",
+    date: "2025-2026",
   },
   {
     jobtitle: "Software Engineer",
