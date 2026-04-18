@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
-import { introdata, meta } from "../../content_option";
+import { introdata, meta, statsdata } from "../../content_option";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
@@ -38,7 +38,7 @@ export const Home = () => {
                   />
                 </h1>
                 <p className="mb-1x">{introdata.description}</p>
-                <div className="intro_btn-action pb-5">
+                <div className="intro_btn-action pb-3">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_p" className="ac_btn btn ">
                       My Portfolio
@@ -55,6 +55,26 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+                  <a
+                    href={introdata.resumeLink || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div id="button_r" className="ac_btn btn">
+                      Resume
+                      <div className="ring one"></div>
+                      <div className="ring two"></div>
+                      <div className="ring three"></div>
+                    </div>
+                  </a>
+                </div>
+                <div className="stats_strip">
+                  {statsdata.map((stat, i) => (
+                    <div key={i} className="stat_item">
+                      <span className="stat_value">{stat.value}</span>
+                      <span className="stat_label">{stat.label}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

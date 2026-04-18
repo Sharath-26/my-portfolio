@@ -39,6 +39,16 @@
     color: var(--text-color-2);
 }
 
+.navbar-brand.nav_ac {
+    color: var(--accent-color);
+    letter-spacing: 0.05em;
+}
+
+.navbar-brand.nav_ac:hover {
+    color: var(--accent-color);
+    opacity: 0.8;
+}
+
 .br-top,
 .br-bottom,
 .br-right,

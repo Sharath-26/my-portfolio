@@ -7,6 +7,11 @@
     color: var(--text-color);
 }
 
+.table tbody th[scope="row"] {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
 .t_border {
     border-color: var(--text-color) !important;
 }
@@ -75,6 +80,30 @@
 }
 .service_desc li {
     margin-bottom: 10px; 
+}
+
+.tech_badge_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 4px 0;
+}
+
+.tech_badge {
+    display: inline-block;
+    padding: 5px 14px;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 20px;
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+    transition: background 0.2s ease, color 0.2s ease;
+    cursor: default;
+}
+
+.tech_badge:hover {
+    background: var(--accent-color);
+    color: #000;
 }
 
 /*! CSS Used keyframes */

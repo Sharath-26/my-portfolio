@@ -18,14 +18,16 @@ const Themetoggle = () => {
   const iconColor = theme === "dark" ? "#fff" : "#000"; // White for dark mode, black for light mode
   
   return (
-    <div 
-      className="nav_ac" 
-      onClick={themeToggle} 
+    <div
+      className="nav_ac"
+      onClick={themeToggle}
+      title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+      style={{ cursor: "pointer" }}
     >
       {theme === "dark" ? (
-        <FaMoon color={iconColor} />
-      ) : (
         <FaSun color={iconColor} />
+      ) : (
+        <FaMoon color={iconColor} />
       )}
     </div>
   );

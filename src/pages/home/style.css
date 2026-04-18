@@ -84,6 +84,7 @@ section {
     font-size: 30px;
     margin-bottom: 50px;
     font-weight: 700;
+    color: var(--accent-color);
 }
 
 .intro_sec .text h3 {
@@ -96,6 +97,16 @@ section {
     background-position: center;
     min-height: 700px;
     position: relative;
+}
+
+.intro_sec .h_bg-image::before {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    border: 2px solid var(--accent-color);
+    opacity: 0.35;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .ac_btn {
@@ -232,3 +243,50 @@ section {
 /* .intro_sec .h_bg-image {
     filter: saturate(0.5);
 } */
+
+.stats_strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.25);
+    margin-top: 0.5rem;
+}
+
+.stat_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat_value {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    font-family: Marcellus;
+    line-height: 1;
+}
+
+.stat_label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.6;
+    margin-top: 4px;
+}
+
+#button_r {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+#button_r:hover {
+    color: #000;
+}
+
+#button_r .two {
+    background-color: var(--accent-color);
+}
+
+#button_r .three {
+    background-color: var(--accent-color);
+}

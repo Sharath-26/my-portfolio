@@ -6,6 +6,7 @@
     --text-color-2: #fff;
     --text-color-3: rgb(204, 0, 0);
     --overlay-color: rgb(12 12 12 / 63%);
+    --accent-color: #5cccc9;
 }
 
 [data-theme="light"] {
@@ -16,6 +17,7 @@
     --text-color-2: #000;
     --text-color-3: rgb(204, 0, 0);
     --overlay-color: rgb(255 255 255 / 70%);
+    --accent-color: #2a9d8f;
 }
 
 html,
@@ -93,4 +95,15 @@ code {
 
 .color_sec {
     color: var(--secondary-color);
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
 }

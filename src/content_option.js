@@ -17,8 +17,8 @@ const introdata = {
   },
   description:
     "Full-Stack Developer passionate about creating scalable, cloud-native applications with React, TypeScript, and AWS — driven by customer obsession and clean, reliable code.",
-  // your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
   your_img: "/mypic.jpg",
+  resumeLink: "", // TODO: add your resume PDF link here (e.g. Google Drive share link)
 };
 
 const dataabout = {
@@ -66,26 +66,26 @@ const worktimeline = [
 ];
 
 const skills = [
-  {
-    name: "JavaScript",
-    value: 90,
-  },
-  {
-    name: "React",
-    value: 80,
-  },
-  {
-    name: "Java",
-    value: 80,
-  },
-  {
-    name: "AWS",
-    value: 80,
-  },
-  {
-    name: "Python",
-    value: 70,
-  },
+  { name: "JavaScript", value: 90 },
+  { name: "React", value: 80 },
+  { name: "Java", value: 80 },
+  { name: "AWS", value: 80 },
+  { name: "Python", value: 70 },
+];
+
+const techStack = [
+  "JavaScript", "TypeScript", "React", "Redux", "Next.js",
+  "Java", "Spring Boot", "Node.js", "Python",
+  "AWS", "GCP", "Docker", "CI/CD",
+  "MongoDB", "SQL", "MariaDB",
+  "Jest", "OAuth2", "JWT", "REST APIs", "Microservices",
+];
+
+const statsdata = [
+  { value: "4+", label: "Years of Experience" },
+  { value: "3", label: "Top-Tier Companies" },
+  { value: "10K+", label: "Monthly Users" },
+  { value: "2", label: "Featured Projects" },
 ];
 
 const Services = [
@@ -117,7 +117,7 @@ const Services = [
 const dataportfolio = [
      
         {
-            your_img: "Semarc.logo.png",
+            your_img: "/Semarc.logo.png",
           title: "SEMARC Application",
           description:
             "A centralized government search platform for Texas integrating data from 4 state agencies. Improved efficiency by 45% with real-time API integration and a scalable React + AWS stack.",
@@ -129,6 +129,20 @@ const dataportfolio = [
           ],
           techStack: "React, Redux, Spring Boot, MongoDB, AWS",
           link: "https://www.dfps.texas.gov/About_DFPS/Reports_and_Presentations/Agencywide/documents/2024/2024-09-19_SB1849_Senate_Interim_Hearing_9.19_FINAL.pdf" // optional if you have it
+        },
+          {
+            your_img: "/amex-resy-tock.webp",
+          title: "Resy (American Express Global Dining)",
+          description:
+            "Contributing to the technical merger of Resy and Tock into a unified, 25,000-venue powerhouse.",
+          points: [
+            <><b>Platform Consolidation:</b> Engineering the backend integration of 8,000+ Tock venues into the Resy ecosystem</>,
+    <><b>Feature Parity:</b> Developing core support for Tock's pre-paid experience and deposit models.</>,
+    <><b>Scalability:</b> Optimizing services to handle a 50% inventory expansion and millions of concurrent users.</>,
+    <><b>Amex Integration:</b> Implementing Early Access logic for exclusive 48-hour cardmember booking windows.</>
+          ],
+          techStack: "React, Java , GCP and MariaDB",
+          link: "https://www.fastcompany.com/91496951/amex-resy-tock-restaurant-reservation-wars" // optional if you have it
         },
       ];
       
@@ -147,10 +161,8 @@ const contactConfig = {
 };
 
 const socialprofils = {
-  github: "https://github.com",
-  facebook: "https://facebook.com",
-  linkedin: "https://linkedin.com",
-  twitter: "https://twitter.com",
+  github: "https://github.com/sravula",       // TODO: update with your actual GitHub URL
+  linkedin: "https://linkedin.com/in/sharathreddy-ravula", // TODO: update with your actual LinkedIn URL
 };
 export {
   meta,
@@ -158,6 +170,8 @@ export {
   dataportfolio,
   worktimeline,
   skills,
+  techStack,
+  statsdata,
   Services,
   introdata,
   contactConfig,

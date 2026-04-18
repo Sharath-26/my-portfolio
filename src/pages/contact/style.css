@@ -5,6 +5,15 @@
     background-color: var(--bg-color);
     border-radius: 0 !important;
     border: 1px solid var(--secondary-color);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact__form .form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(92, 204, 201, 0.12);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    outline: none;
 }
 
 .contact__form input.form-control {

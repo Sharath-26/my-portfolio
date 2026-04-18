@@ -41,6 +41,16 @@
     transition: all .3s;
 }
 
+.stick_follow_icon ul li a {
+    transition: color 0.2s ease;
+}
+
+.stick_follow_icon ul li:hover svg {
+    fill: var(--accent-color);
+    transform: scale(1.2);
+    transition: fill 0.2s ease, transform 0.2s ease;
+}
+
 .stick_follow_icon p:after {
     top: 9px;
     right: -48px;
