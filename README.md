@@ -1,38 +1,63 @@
-### Description
+# Sharath Reddy Ravula — Portfolio
 
-A simple portfolio template for developer/designers built with React. 
+Personal portfolio website built with React, showcasing my experience, projects, and skills as a Full-Stack Software Engineer.
 
-### [live preview](https://ubaimutl.github.io/react-portfolio/)
+### [sharathreddy.vercel.app](https://sharathreddy.vercel.app)
 
-[![react portfoiio](src/assets/images/react%20portfolio%20gif.gif)](https://ubaimutl.github.io/react-portfolio/)
+---
+
+### About
+
+Full-Stack Developer with 4+ years of experience building scalable, cloud-native applications at American Express, Amazon, Deloitte, and Accenture. Passionate about React, TypeScript, Java, and AWS.
+
+---
 
 ### Features
 
-- Fully Responsive
-- Multi-Page Layout
-- Contact Form With EmailJs
-- React-Bootstrap
-- Edit Content From One Place
+- Responsive design with dark / light mode
+- Animated typewriter hero with live status indicator
+- Portfolio project cards with tech stack details
+- Scroll-triggered fade-in animations
+- Skills displayed as interactive tech badges
+- Work timeline, education, and services sections
+- Contact form powered by EmailJS
+- Microsoft Clarity analytics integration
+- Single source of truth — all content editable in `src/content_option.js`
 
-### Setup
+---
 
-Get the code
+### Tech Stack
 
-<pre>git clone https://github.com/ubaimutl/react-portfolio.git</pre>
- 
-Install required dependencies
+React 18 · React Bootstrap · React Router v6 · Typewriter Effect · EmailJS · React Helmet
 
-<pre>yarn install</pre>
+---
 
+### Local Development
 
-Start the server
+Install dependencies
 
-<pre>yarn start</pre>
+```bash
+yarn install
+```
 
-### More
+Start the dev server
 
-Modify pages content in  `src/content_option.js`.
+```bash
+yarn start
+```
 
-### Thanks
+---
 
-If you like this portfolio template don't forget give it a ⭐ 
+### Updating Content
+
+All personal content (bio, projects, skills, work history, status) lives in one file:
+
+```
+src/content_option.js
+```
+
+---
+
+### Deployment
+
+Deployed on [Vercel](https://vercel.com). Pushes to `main` trigger automatic redeployment.
