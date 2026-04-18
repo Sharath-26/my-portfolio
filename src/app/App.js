@@ -8,6 +8,7 @@ import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
 import AnimatedCursor  from "../hooks/AnimatedCursor";
+import { ChatWidget } from "../components/chatwidget";
 import "./App.css";
 
 function _ScrollToTop(props) {
@@ -35,6 +36,7 @@ export default function App() {
       <ScrollToTop>
         <Headermain />
         <AppRoutes />
+        <ChatWidget />
       </ScrollToTop>
     </Router>
   );
