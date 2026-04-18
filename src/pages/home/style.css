@@ -1,3 +1,51 @@
+.status_badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+    opacity: 0.9;
+}
+
+.status_dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.status_dot--green {
+    background: #48c78e;
+    box-shadow: 0 0 0 0 rgba(72, 199, 142, 0.7);
+    animation: pulse_green 2s infinite;
+}
+
+.status_dot--yellow {
+    background: #f5a623;
+    box-shadow: 0 0 0 0 rgba(245, 166, 35, 0.7);
+    animation: pulse_yellow 2s infinite;
+}
+
+@keyframes pulse_green {
+    0%   { box-shadow: 0 0 0 0 rgba(72, 199, 142, 0.7); }
+    70%  { box-shadow: 0 0 0 7px rgba(72, 199, 142, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(72, 199, 142, 0); }
+}
+
+@keyframes pulse_yellow {
+    0%   { box-shadow: 0 0 0 0 rgba(245, 166, 35, 0.7); }
+    70%  { box-shadow: 0 0 0 7px rgba(245, 166, 35, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(245, 166, 35, 0); }
+}
+
+.status_label {
+    white-space: nowrap;
+}
+
 section {
     flex: 1 0 auto;
     position: relative;

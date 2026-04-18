@@ -1,4 +1,9 @@
 const logotext = "Sharath";
+
+const currentStatus = {
+  label: "Currently building: Resy × Tock merger at Amex",
+  available: true, // true = green pulse, false = yellow pulse
+};
 const meta = {
   title: "Sharath Reddy",
   description:
@@ -166,6 +171,7 @@ const socialprofils = {
 };
 export {
   meta,
+  currentStatus,
   dataabout,
   dataportfolio,
   worktimeline,

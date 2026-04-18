@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
-import { introdata, meta, statsdata } from "../../content_option";
+import { introdata, meta, statsdata, currentStatus } from "../../content_option";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
@@ -22,6 +22,10 @@ export const Home = () => {
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
+                <div className="status_badge">
+                  <span className={`status_dot ${currentStatus.available ? "status_dot--green" : "status_dot--yellow"}`}></span>
+                  <span className="status_label">{currentStatus.label}</span>
+                </div>
                 <h2 className="mb-1x">{introdata.title}</h2>
                 <h1 className="fluidz-48 mb-1x">
                   <Typewriter
